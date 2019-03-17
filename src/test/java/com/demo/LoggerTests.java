@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class LoggerTests {
 
     @Test
-    public void test() {
+    public void testLog() {
         String name = "hello";
         String pwd = "world";
         log.debug("debugger...");
