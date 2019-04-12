@@ -1,2 +1,5 @@
 server:
   port: 1994
+jobs:
+  cron1: 0/5 * * * * ?
+  cron2: 0/3 * * * * ?
