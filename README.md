@@ -1,3 +1,3 @@
 # springboot
 
-SpringBoot  整合 logback 
+SpringBoot 使用 logback.xml 管理日志
