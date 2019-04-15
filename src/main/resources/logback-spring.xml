@@ -50,4 +50,6 @@
         <appender-ref ref="fileErrorLog"/>
     </root>
 
+<!--   <logger name="com.demo.mapper" level="DEBUG" />-->
+
 </configuration>

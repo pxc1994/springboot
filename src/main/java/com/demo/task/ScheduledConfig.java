@@ -18,6 +18,7 @@ public class ScheduledConfig implements SchedulingConfigurer {
     @Override
     public void configureTasks(ScheduledTaskRegistrar registrar) {
         //设定一个长度10的定时任务线程池
-        registrar.setScheduler(Executors.newScheduledThreadPool(10));
+       registrar.setScheduler(Executors.newScheduledThreadPool(10));
     }
+
 }
