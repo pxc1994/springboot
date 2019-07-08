@@ -30,16 +30,14 @@ public class DemoApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        int pageNo =1;
-        int pageSize =2;
-        PageHelper.startPage(pageNo,pageSize);
+        int pageNo = 1;
+        int pageSize = 2;
+        PageHelper.startPage(pageNo, pageSize);
         List<Info> list = demoMapper.userInfo();
         //用PageInfo对结果进行包装
         PageInfo<Info> page = new PageInfo<>(list);
         System.out.println("总记录数 ： " + page.getTotal());
-        System.out.println("结果集 ： " +page.getList());
-
-
+        System.out.println("结果集 ： " + page.getList());
 
 
     }
