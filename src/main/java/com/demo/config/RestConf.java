@@ -11,7 +11,6 @@ import org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
-import org.apache.http.protocol.HttpContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
@@ -20,7 +19,6 @@ import org.springframework.web.client.RestTemplate;
 
 import javax.net.ssl.SSLException;
 import javax.net.ssl.SSLHandshakeException;
-import java.io.IOException;
 import java.io.InterruptedIOException;
 import java.net.UnknownHostException;
 
@@ -31,8 +29,7 @@ import java.net.UnknownHostException;
  * @Date 2019-07-08 21:34
  */
 @Configuration
-public class RestUtils {
-
+public class RestConf {
 
     @Bean
     public RestTemplate restTemplate(){

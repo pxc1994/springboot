@@ -10,5 +10,4 @@ spring:
     password: root123
     driver-class-name:  com.mysql.cj.jdbc.Driver
 logging:
-  level:
-    com.demo.mapper: TRACE
+  config: classpath:logback-boot.xml
